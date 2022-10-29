@@ -20,9 +20,10 @@ body{
 main{
     background-image: url(../assets/imgs/bgBlue.jpg);
     display: grid;
-    grid-template-columns: 30% 15px 50% 15px 16%;
+    grid-template-columns: 30% 16px 50% 16px 20%;
     position: fixed;
     width: 100%;
+    height: 100%;
 }
 
 .cookie-space{
@@ -36,25 +37,35 @@ main{
     width: 100%;
     max-width: 75%;
     background-color: #00000066;
-    color: #ffffffcc;
     border-radius: 12px;
     margin-bottom: 10px;
 }
 
 .cookies-text,
-.cookie-space h1{
+.cookie-space h1,
+.cookie-store h2{
     text-align: center;
 }
 
-.cookies-text{
-    background-color: #00000066;
+.cookies-text,
+.cookie-store,
+.store-config{
     color: #fff;
-    width: 100%;
     text-shadow: 
     1px 0px 0px #000,
     -1px 0px 0px #000,
     0px 1px 0px #000,
     0px -1px 0px #000, 0px 1px 4px #000;
+}
+
+.cookie-space h1,
+.store-config{
+    color: #ffffffcc;
+}
+
+.cookies-text{
+    background-color: #00000066;
+    width: 100%;
     margin-bottom: 15%;
 }
 
@@ -68,7 +79,7 @@ main{
 }
 
 .separator-vertical{
-    width: 15px;
+    width: 16px;
     background-image: url(../assets/imgs/panelVertical.png)
 }
 
@@ -92,7 +103,6 @@ main{
     width: 100%;
     height: 100%;
     max-height: 50%;
-    cursor: pointer;
 }
 
 .menu-image,
@@ -109,13 +119,17 @@ main{
     align-items: center;
 }
 
+.menu-figcaption h3,
+.cookie-store{
+    text-transform: capitalize;
+}
+
 .menu-figcaption h3{
     color: #999;
     font-size: 16px;
     text-shadow: 
     0px 1px 0px #444, 
     0px 0px 4px #000;
-    text-transform: capitalize;
 }
 
 .menu-button{
@@ -131,6 +145,7 @@ main{
 
 .separator-horizontal{
     height: 15px;
+    width: 100%;
     background-image: url(../assets/imgs/panelHorizontal.png);
 }
 
@@ -142,4 +157,60 @@ main{
 #grandma-container{
     background-image: url(../assets/imgs/grandmaBackground.png);
     background-repeat: repeat-x;
+}
+
+.store-achievements{
+    height: 10%;
+}
+
+.store-config{
+    background-image: url(../assets/imgs/darkNoise.jpg);
+}
+
+.store-config-primary,
+.store-config-secondary,
+.store-upgrade{
+    list-style: none;
+}
+
+.store-config-primary,
+.upgrade{
+    display: flex;
+    align-items: center;
+}
+
+.store-config-primary{
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.store-config-secondary,
+.upgrade figcaption{
+    display: flex;
+    flex-direction: column;
+}
+
+.store-config-button,
+.store-upgrade,
+.cookie-button,
+.menu-figure{
+    cursor: pointer;
+}
+
+.store-upgrade{
+    height: 64px;
+    background-image: url(../assets/imgs/store-upgrade-background-image.png);
+}
+
+.upgrade{
+    height: 100%;
+}
+
+.cookie-price{
+    background-image: url('../assets/imgs/money.png');
+    padding-left: 18px;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    color: #66ff66;
+    text-shadow: 0px 2px 6px #000, 0px 1px 1px #000;
 }
