@@ -8,6 +8,11 @@ button{
     all: unset;
 }
 
+img,
+canvas{
+    display: block;
+}
+
 body{
     font-family: 'Merriweather', Georgia,serif;
 }
@@ -127,4 +132,14 @@ main{
 .separator-horizontal{
     height: 15px;
     background-image: url(../assets/imgs/panelHorizontal.png);
+}
+
+.upgrade-container{
+    height: 127px;
+    width: 100%;
+}
+
+#grandma-container{
+    background-image: url(../assets/imgs/grandmaBackground.png);
+    background-repeat: repeat-x;
 }
